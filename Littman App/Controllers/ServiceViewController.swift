@@ -14,8 +14,8 @@ class ServiceViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUI()
-        serviceTableView.separatorStyle = .none
-
+        serviceTableView.separatorStyle = .singleLine
+        serviceTableView.separatorColor = .gray
         // Do any additional setup after loading the view.
     }
     
@@ -31,6 +31,18 @@ class ServiceViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row{
+        case 1:
+            break;
+        case 5:
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier:"AskUS" ) 
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+        default:
+            break;
+        }
+    }
     func setUI() {
         
         let longTitleLabel = UILabel()

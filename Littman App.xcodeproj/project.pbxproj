@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593F364528A1F7C400107C68 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F364428A1F7C400107C68 /* ListViewController.swift */; };
+		593F364728A1FA7600107C68 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F364628A1FA7600107C68 /* ListTableViewCell.swift */; };
 		59E40D89289A056C0079B3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E40D88289A056C0079B3D6 /* AppDelegate.swift */; };
 		59E40D8B289A056C0079B3D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E40D8A289A056C0079B3D6 /* SceneDelegate.swift */; };
 		59E40D8D289A056C0079B3D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E40D8C289A056C0079B3D6 /* ViewController.swift */; };
@@ -26,6 +28,13 @@
 		59E40DD0289B6C2F0079B3D6 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E40DCF289B6C2F0079B3D6 /* ServiceTableViewCell.swift */; };
 		59E40DD2289B7D5B0079B3D6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E40DD1289B7D5B0079B3D6 /* SettingsViewController.swift */; };
 		59E40DD4289B7E800079B3D6 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E40DD3289B7E800079B3D6 /* SettingsTableViewCell.swift */; };
+		59F4046228AD4269008996F0 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59F4046028AD4269008996F0 /* Poppins-Bold.ttf */; };
+		59F4046328AD4269008996F0 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59F4046028AD4269008996F0 /* Poppins-Bold.ttf */; };
+		59F4046428AD4269008996F0 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59F4046028AD4269008996F0 /* Poppins-Bold.ttf */; };
+		59F4046528AD4269008996F0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59F4046128AD4269008996F0 /* Poppins-Medium.ttf */; };
+		59F4046628AD4269008996F0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59F4046128AD4269008996F0 /* Poppins-Medium.ttf */; };
+		59F4046728AD4269008996F0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59F4046128AD4269008996F0 /* Poppins-Medium.ttf */; };
+		8560F1557D387CD6B3797FE4 /* Pods_Littman_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC6B889A96708F3610348B2 /* Pods_Littman_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CC6B889A96708F3610348B2 /* Pods_Littman_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Littman_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		287CD6C5B78ABFBF506893ED /* Pods-Littman App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Littman App.debug.xcconfig"; path = "Target Support Files/Pods-Littman App/Pods-Littman App.debug.xcconfig"; sourceTree = "<group>"; };
+		511170B2C831D3099E1F0B54 /* Pods-Littman App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Littman App.release.xcconfig"; path = "Target Support Files/Pods-Littman App/Pods-Littman App.release.xcconfig"; sourceTree = "<group>"; };
+		593F364428A1F7C400107C68 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		593F364628A1FA7600107C68 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListTableViewCell.swift; path = "Littman App/Common/Cells/ListTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		59E40D85289A056C0079B3D6 /* Littman App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Littman App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E40D88289A056C0079B3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59E40D8A289A056C0079B3D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +83,8 @@
 		59E40DCF289B6C2F0079B3D6 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 		59E40DD1289B7D5B0079B3D6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Littman App/Controllers/SettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		59E40DD3289B7E800079B3D6 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		59F4046028AD4269008996F0 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		59F4046128AD4269008996F0 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8560F1557D387CD6B3797FE4 /* Pods_Littman_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +113,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EEB72C869D1992B48B4FEA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				287CD6C5B78ABFBF506893ED /* Pods-Littman App.debug.xcconfig */,
+				511170B2C831D3099E1F0B54 /* Pods-Littman App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		43344E7842D87CE62C1A81B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CC6B889A96708F3610348B2 /* Pods_Littman_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		59E40D7C289A056C0079B3D6 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +137,8 @@
 				59E40DA1289A056D0079B3D6 /* Littman AppTests */,
 				59E40DAB289A056D0079B3D6 /* Littman AppUITests */,
 				59E40D86289A056C0079B3D6 /* Products */,
+				0EEB72C869D1992B48B4FEA3 /* Pods */,
+				43344E7842D87CE62C1A81B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +198,7 @@
 		59E40DBD289A06CA0079B3D6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				59F4045F28AD4253008996F0 /* Custom Font */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -199,6 +236,7 @@
 				59E40DC8289A133E0079B3D6 /* ServiceViewController.swift */,
 				59E40DCA289A135D0079B3D6 /* SearchViewController.swift */,
 				59E40DD1289B7D5B0079B3D6 /* SettingsViewController.swift */,
+				593F364428A1F7C400107C68 /* ListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -209,8 +247,18 @@
 				59E40DCD289AC2AA0079B3D6 /* HomeCollectionViewCell.swift */,
 				59E40DCF289B6C2F0079B3D6 /* ServiceTableViewCell.swift */,
 				59E40DD3289B7E800079B3D6 /* SettingsTableViewCell.swift */,
+				593F364628A1FA7600107C68 /* ListTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		59F4045F28AD4253008996F0 /* Custom Font */ = {
+			isa = PBXGroup;
+			children = (
+				59F4046028AD4269008996F0 /* Poppins-Bold.ttf */,
+				59F4046128AD4269008996F0 /* Poppins-Medium.ttf */,
+			);
+			path = "Custom Font";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59E40DB2289A056D0079B3D6 /* Build configuration list for PBXNativeTarget "Littman App" */;
 			buildPhases = (
+				16FE43A50D42331589173DC4 /* [CP] Check Pods Manifest.lock */,
 				59E40D81289A056C0079B3D6 /* Sources */,
 				59E40D82289A056C0079B3D6 /* Frameworks */,
 				59E40D83289A056C0079B3D6 /* Resources */,
+				D46125621BB1AF8FE1730957 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +370,8 @@
 				59E40D98289A056D0079B3D6 /* LaunchScreen.storyboard in Resources */,
 				59E40D95289A056D0079B3D6 /* Assets.xcassets in Resources */,
 				59E40D90289A056C0079B3D6 /* Main.storyboard in Resources */,
+				59F4046228AD4269008996F0 /* Poppins-Bold.ttf in Resources */,
+				59F4046528AD4269008996F0 /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +379,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F4046328AD4269008996F0 /* Poppins-Bold.ttf in Resources */,
+				59F4046628AD4269008996F0 /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,10 +388,54 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F4046428AD4269008996F0 /* Poppins-Bold.ttf in Resources */,
+				59F4046728AD4269008996F0 /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16FE43A50D42331589173DC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Littman App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D46125621BB1AF8FE1730957 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Littman App/Pods-Littman App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Littman App/Pods-Littman App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Littman App/Pods-Littman App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59E40D81289A056C0079B3D6 /* Sources */ = {
@@ -350,6 +448,7 @@
 				59E40DCB289A135D0079B3D6 /* SearchViewController.swift in Sources */,
 				59E40DD0289B6C2F0079B3D6 /* ServiceTableViewCell.swift in Sources */,
 				59E40DD4289B7E800079B3D6 /* SettingsTableViewCell.swift in Sources */,
+				593F364528A1F7C400107C68 /* ListViewController.swift in Sources */,
 				59E40D89289A056C0079B3D6 /* AppDelegate.swift in Sources */,
 				59E40DCE289AC2AA0079B3D6 /* HomeCollectionViewCell.swift in Sources */,
 				59E40D8B289A056C0079B3D6 /* SceneDelegate.swift in Sources */,
@@ -357,6 +456,7 @@
 				59E40DC9289A133E0079B3D6 /* ServiceViewController.swift in Sources */,
 				59E40DC2289A07D50079B3D6 /* AppConstants.swift in Sources */,
 				59E40DD2289B7D5B0079B3D6 /* SettingsViewController.swift in Sources */,
+				593F364728A1FA7600107C68 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +628,7 @@
 		};
 		59E40DB3289A056D0079B3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287CD6C5B78ABFBF506893ED /* Pods-Littman App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -555,6 +656,7 @@
 		};
 		59E40DB4289A056D0079B3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 511170B2C831D3099E1F0B54 /* Pods-Littman App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

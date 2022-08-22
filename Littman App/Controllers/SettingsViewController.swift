@@ -10,7 +10,7 @@ import UIKit
 class SettingsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
-        self.tableView.separatorColor = .none
+        self.tableView.separatorColor = .gray
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: Notification.Name("ModeSwiched"), object: nil)
         

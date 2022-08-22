@@ -9,7 +9,9 @@ import UIKit
 
 class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
   
+    @IBOutlet weak var publicationLabel: UILabel!
     
+    @IBOutlet weak var eventLabel: UILabel!
     
     @IBOutlet weak var publicationCollectionView: UICollectionView!
     @IBOutlet weak var eventCollectionView: UICollectionView!
@@ -18,16 +20,38 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.overrideUserInterfaceStyle = .light
         self.setUI()
+    
+       
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func showPublicationList(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier:"ListVC" ) as! ListViewController
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Selected New Publications", style: .plain, target: nil, action: nil)
+        nextViewController.type = textConstants.publicationListTitle
+        nextViewController.listPublicationArray = publicationseries
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
+    @IBAction func showEventList(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier:"ListVC" ) as! ListViewController
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Events & Exhibits", style: .plain, target: nil, action: nil)
+        nextViewController.type = textConstants.eventListTitle
+        nextViewController.listEventArray = eventseries
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
     
     func setUI() {
         
         let longTitleLabel = UILabel()
         longTitleLabel.text = textConstants.homeTitle
         longTitleLabel.font = UIFont(name: fontConstant.boldFont, size: 28)
+        publicationLabel.font = UIFont(name: fontConstant.boldFont, size: 20)
+        eventLabel.font = UIFont(name: fontConstant.boldFont, size: 20)
         longTitleLabel.sizeToFit()
         let leftItem = UIBarButtonItem(customView: longTitleLabel)
         self.navigationItem.leftBarButtonItem = leftItem
@@ -36,10 +60,10 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
     //collection View
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.publicationCollectionView {
-        return publicationseries.count
+            return publicationseries.count
         }
         else {
-        return eventseries.count
+            return eventseries.count
         }
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
