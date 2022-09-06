@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
   
+    @IBOutlet weak var hamburgerIcon: UIBarButtonItem!
     @IBOutlet weak var publicationLabel: UILabel!
     
     @IBOutlet weak var eventLabel: UILabel!
@@ -21,9 +22,17 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUI()
-    
+        NotificationCenter.default.addObserver(self, selector: #selector(self.setUI), name: Notification.Name("ModeSwiched"), object: nil)
        
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        if self.traitCollection.userInterfaceStyle == .light{
+            hamburgerIcon.tintColor = .black
+        }
+        else{
+            hamburgerIcon.tintColor = .white
+        }
     }
     
     @IBAction func showPublicationList(_ sender: Any) {
@@ -45,7 +54,7 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
     }
     
     
-    func setUI() {
+    @objc func setUI() {
         
         let longTitleLabel = UILabel()
         longTitleLabel.text = textConstants.homeTitle
@@ -55,7 +64,14 @@ class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectio
         longTitleLabel.sizeToFit()
         let leftItem = UIBarButtonItem(customView: longTitleLabel)
         self.navigationItem.leftBarButtonItem = leftItem
+        
+        if self.traitCollection.userInterfaceStyle == .dark {
+            self.hamburgerIcon.tintColor = .white
+        }else{
+            self.hamburgerIcon.tintColor = .black
+        }
     }
+    
     
     //collection View
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

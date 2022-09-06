@@ -38,11 +38,11 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDN-03-L7T">
-                                                    <rect key="frame" x="350" y="23" width="44" height="31"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="374" y="23" width="20" height="31"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="32" id="RXx-h9-cwr"/>
-                                                        <constraint firstAttribute="width" constant="44" id="e8V-NZ-9f8"/>
+                                                        <constraint firstAttribute="height" constant="20" id="RXx-h9-cwr"/>
+                                                        <constraint firstAttribute="width" constant="20" id="e8V-NZ-9f8"/>
                                                     </constraints>
                                                     <color key="tintColor" systemColor="systemRedColor"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -87,6 +87,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="hamburgerIcon" destination="ebY-ql-WfQ" id="tL2-JD-quH"/>
                         <outlet property="serviceTableView" destination="UnA-hE-Ers" id="VjB-p2-UUU"/>
                     </connections>
                 </viewController>
@@ -193,11 +194,7 @@ Riether</string>
                             <constraint firstItem="nqX-6Y-Qgb" firstAttribute="trailing" secondItem="Edq-v6-LmZ" secondAttribute="trailing" id="mJZ-mx-pJi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mFc-8M-6L5">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgericon" id="oUY-br-7LP">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="mFc-8M-6L5"/>
                     <connections>
                         <outlet property="listTableView" destination="Edq-v6-LmZ" id="gIV-us-V7E"/>
                     </connections>
@@ -216,6 +213,8 @@ Riether</string>
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="Search for articles, books and more" translatesAutoresizingMaskIntoConstraints="NO" id="VjU-ZS-swS">
                                 <rect key="frame" x="10" y="97" width="394" height="51"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <color key="barTintColor" systemColor="systemBackgroundColor"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAd-ha-fHK">
@@ -227,7 +226,7 @@ Riether</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Books" backgroundImage="buttonbackground">
-                                    <color key="titleColor" red="0.1019607843" green="0.1019607931" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1n-nN-bwa">
@@ -239,7 +238,7 @@ Riether</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Course Reserves" backgroundImage="buttonbackground">
-                                    <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqc-JW-f3I">
@@ -251,7 +250,7 @@ Riether</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Journals" backgroundImage="buttonbackground">
-                                    <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                         </subviews>
@@ -277,6 +276,13 @@ Riether</string>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="books" destination="sAd-ha-fHK" id="2uQ-h3-XRF"/>
+                        <outlet property="course" destination="O1n-nN-bwa" id="w6K-YD-zva"/>
+                        <outlet property="hamburgerIcon" destination="bg5-Fz-Gvl" id="s70-J3-Mvy"/>
+                        <outlet property="journals" destination="aqc-JW-f3I" id="U88-74-YfE"/>
+                        <outlet property="searchBar" destination="VjU-ZS-swS" id="jmO-AP-O5x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3f-Rh-gdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -486,7 +492,7 @@ Riether</string>
                                     <attributedString key="attributedTitle">
                                         <fragment content="see more">
                                             <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="NSColor" red="0.61960786580000005" green="0.61960786580000005" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <font key="NSFont" size="10" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -508,7 +514,7 @@ Riether</string>
                                     <attributedString key="attributedTitle">
                                         <fragment content=" see more">
                                             <attributes>
-                                                <color key="NSColor" red="0.9741950757575758" green="0.9741950757575758" blue="0.9741950757575758" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="NSColor" red="0.61568629740000003" green="0.61960786580000005" blue="0.61960786580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <font key="NSFont" size="10" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -552,6 +558,7 @@ Riether</string>
                     <connections>
                         <outlet property="eventCollectionView" destination="bq2-P1-7yM" id="jLS-qh-xJr"/>
                         <outlet property="eventLabel" destination="yz3-9Z-Iky" id="eV0-5l-c6f"/>
+                        <outlet property="hamburgerIcon" destination="vkB-4B-b6g" id="ERs-pM-9tD"/>
                         <outlet property="publicationCollectionView" destination="Aen-gU-aXw" id="gz5-qW-jPS"/>
                         <outlet property="publicationLabel" destination="dFo-V5-Amw" id="1Mb-DT-qb2"/>
                     </connections>
@@ -728,6 +735,7 @@ Riether</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="hamburgerIcon" destination="H9j-yC-9gH" id="zPZ-fK-qqb"/>
                         <outlet property="tableView" destination="0zR-Pd-7P1" id="rVX-oG-aeC"/>
                     </connections>
                 </viewController>

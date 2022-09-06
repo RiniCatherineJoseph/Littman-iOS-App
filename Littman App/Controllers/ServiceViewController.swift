@@ -9,16 +9,25 @@ import UIKit
 
 class ServiceViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var serviceTableView: UITableView!
-    var serviceArray : [String] = ["Reference services,instruction, research assistance","Borrowing and document delivery","Reserves","Access to the library for handicapped","Collections","Ask Us!"]
+    @IBOutlet weak var hamburgerIcon: UIBarButtonItem!
+    var serviceArray : [String] = ["Ask Us!"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUI()
         serviceTableView.separatorStyle = .singleLine
         serviceTableView.separatorColor = .gray
+        NotificationCenter.default.addObserver(self, selector: #selector(self.setUI), name: Notification.Name("ModeSwiched"), object: nil)
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        if self.traitCollection.userInterfaceStyle == .light{
+            hamburgerIcon.tintColor = .black
+        }
+        else{
+            hamburgerIcon.tintColor = .white
+        }
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         serviceArray.count
     }
@@ -35,7 +44,7 @@ class ServiceViewController: UIViewController, UITableViewDelegate, UITableViewD
         switch indexPath.row{
         case 1:
             break;
-        case 5:
+        case 0:
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             let nextViewController = storyBoard.instantiateViewController(withIdentifier:"AskUS" ) 
             self.navigationController?.pushViewController(nextViewController, animated: true)
@@ -43,7 +52,7 @@ class ServiceViewController: UIViewController, UITableViewDelegate, UITableViewD
             break;
         }
     }
-    func setUI() {
+    @objc func setUI() {
         
         let longTitleLabel = UILabel()
         longTitleLabel.text = textConstants.serviceTitle
@@ -51,6 +60,12 @@ class ServiceViewController: UIViewController, UITableViewDelegate, UITableViewD
         longTitleLabel.sizeToFit()
         let leftItem = UIBarButtonItem(customView: longTitleLabel)
         self.navigationItem.leftBarButtonItem = leftItem
+        if self.traitCollection.userInterfaceStyle == .light{
+            hamburgerIcon.tintColor = .black
+        }
+        else{
+            hamburgerIcon.tintColor = .white
+        }
     }
     
     @IBAction func showSettings(_ sender: Any) {

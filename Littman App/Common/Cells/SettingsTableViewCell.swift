@@ -23,7 +23,7 @@ class SettingsTableViewCell: UITableViewCell {
     }
     @IBAction func swichChanged(_ sender: Any) {
         
-        if (sender as AnyObject).tag == 0{
+        if (sender as AnyObject).tag == 1{
             if fontConstant.largeFont {
                 fontConstant.largeFont = false
             }else {
@@ -32,7 +32,7 @@ class SettingsTableViewCell: UITableViewCell {
             NotificationCenter.default.post(name: Notification.Name("FontSwiched"), object: nil)
             
            
-        } else if (sender as AnyObject).tag == 1{
+        } else if (sender as AnyObject).tag == 0{
             if self.traitCollection.userInterfaceStyle == .dark{
                 self.window?.overrideUserInterfaceStyle = .light
                 NotificationCenter.default.post(name: Notification.Name("ModeSwiched"), object: nil)

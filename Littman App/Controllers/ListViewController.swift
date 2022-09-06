@@ -8,6 +8,7 @@
 import UIKit
 
 class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    @IBOutlet weak var hamburgerIcon: UIBarButtonItem!
     
     
     @IBOutlet weak var listTableView: UITableView!

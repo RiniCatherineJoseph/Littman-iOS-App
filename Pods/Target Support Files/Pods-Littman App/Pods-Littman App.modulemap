@@ -1,0 +1,6 @@
+framework module Pods_Littman_App {
+  umbrella header "Pods-Littman App-umbrella.h"
+
+  export *
+  module * { export * }
+}
